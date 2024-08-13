@@ -113,4 +113,4 @@ https://www.mongodb.com/cloud/atlas/register
 - "node .\index.js" for the backend
 - "npm run dev" for the admin panel
 
-```
+```# HotelBookingWithTYPESCRIPT
