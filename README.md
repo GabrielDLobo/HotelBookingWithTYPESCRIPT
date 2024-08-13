@@ -1,7 +1,6 @@
 [REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
 [TYPESCRIPT__BADGE]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [TAILWIND__BADGE]: https://img.shields.io/badge/-Tailwind%20CSS-%231a202c?style=for-the-badge&logo=tailwind-css
-[FIREBASE__BADGE]: https://img.shields.io/badge/Firebase-DD2C00.svg?style=for-the-badge&logo=Firebase&logoColor=white
 [SHADCNUI__BADGE]: https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white
 [CLERKIO__BADGE]: https://img.shields.io/badge/Clerk-6C47FF.svg?style=for-the-badge&logo=Clerk&logoColor=white
 [MYSQL__BADGE]: https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=MySQL&logoColor=white
@@ -19,7 +18,6 @@
 ![react][REACT__BADGE]
 ![typescript][TYPESCRIPT__BADGE]
 ![tailwind][TAILWIND__BADGE]
-![firebase][FIREBASE__BADGE]
 ![shadcnui][SHADCNUI__BADGE]
 ![clerkio][CLERKIO__BADGE]
 ![mysql][MYSQL__BADGE]
@@ -98,7 +96,6 @@
 - [VsCode](https://code.visualstudio.com/download)
 - [NextJS](https://nextjs.org/docs/getting-started/installation)
 - [React](https://react.dev/learn/start-a-new-react-project)
-- [Google Firebase](https://firebase.google.com/?hl=pt)
 - [Clerk](https://dashboard.clerk.com/sign-up)
 - [Neon Console](https://console.neon.tech/)
 - [Uploadthing](https://uploadthing.com/)
@@ -136,6 +133,9 @@ Would you like to use Turbopack for `next dev`?  No / "YES"
 Would you like to customize the import alias (`@/*` by default)? No / "YES"
 What import alias would you like configured? @/*
 
+- "npm install @prisma/client"
+
+
 
 📌 2º Create an account and connect CLERK in the file .env 📌
 https://dashboard.clerk.com/sign-up
@@ -146,18 +146,44 @@ https://dashboard.clerk.com/sign-up
 
 
 📌 3º Create an account and connect NEON in the project 📌
-[https://firebase.google.com/?hl=pt](https://console.neon.tech/)
+https://console.neon.tech/
 
 - Create a new simple project/application 
 - Copy the URL in "Connection string" and paste in the "DATABASE_URL"
+- Copy and replace this in "schema.prisma" file
+
+"datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}"
 
 
 
+📌 4º Create an account and connect UPLOADTHING in the project 📌
+https://uploadthing.com/
+
+- Create a new application
+- copy the API KEYS and paste in the .env file.
 
 
 
-📌 4º Start Your Project 📌
+📌 5º Create an account and connect STRIPE in the project 📌
+https://stripe.com/br
 
-- "npm start" for the frontend
-- "node .\index.js" for the backend
-- "npm run dev" for the admin panel
+- Click in "Developers" and "API KEYS"
+- copy the "Publishable Key" and "Secret Key" and past in the .env file in the fields "Next Public Stripe Publishable Key" and "Stripe Secret Key"
+
+
+
+📌 6º run the NPX codes in VSCODE 📌
+
+- "npm i"
+- "npx prisma generate"
+- "npx prisma db push"
+
+
+
+📌 Start Your Project 📌
+
+- "npm run dev"
