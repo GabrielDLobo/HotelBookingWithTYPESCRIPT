@@ -1,6 +1,7 @@
 [REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
 [TYPESCRIPT__BADGE]: https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white
 [TAILWIND__BADGE]: https://img.shields.io/badge/-Tailwind%20CSS-%231a202c?style=for-the-badge&logo=tailwind-css
+[FIREBASE__BADGE]: https://img.shields.io/badge/Firebase-DD2C00.svg?style=for-the-badge&logo=Firebase&logoColor=white
 [SHADCNUI__BADGE]: https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white
 [CLERKIO__BADGE]: https://img.shields.io/badge/Clerk-6C47FF.svg?style=for-the-badge&logo=Clerk&logoColor=white
 [MYSQL__BADGE]: https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=MySQL&logoColor=white
@@ -18,6 +19,7 @@
 ![react][REACT__BADGE]
 ![typescript][TYPESCRIPT__BADGE]
 ![tailwind][TAILWIND__BADGE]
+![firebase][FIREBASE__BADGE]
 ![shadcnui][SHADCNUI__BADGE]
 ![clerkio][CLERKIO__BADGE]
 ![mysql][MYSQL__BADGE]
@@ -95,6 +97,11 @@
 
 - [VsCode](https://code.visualstudio.com/download)
 - [React](https://react.dev/learn/start-a-new-react-project)
+- [Google Firebase](https://firebase.google.com/?hl=pt)
+- [Clerk](https://dashboard.clerk.com/sign-up)
+- [Neon Console](https://console.neon.tech/)
+- [Uploadthing](https://uploadthing.com/)
+- [Stripe](https://stripe.com/br)
 
 
 <h3>Cloning</h3>
