@@ -96,6 +96,7 @@
 <h3>Prerequisites</h3>
 
 - [VsCode](https://code.visualstudio.com/download)
+- [NextJS](https://nextjs.org/docs/getting-started/installation)
 - [React](https://react.dev/learn/start-a-new-react-project)
 - [Google Firebase](https://firebase.google.com/?hl=pt)
 - [Clerk](https://dashboard.clerk.com/sign-up)
@@ -121,27 +122,41 @@ How to start the project
 📌 1º Create your project and Install the frameworks 📌 
 Start by creating a new React project.
 
-- "npx create-react-app ."
-- "npm install react-router-dom"
-- "$ npm install express --save"
-- "npm install react-icons --save"
-- "npm start"
+- "npm install next@latest react@latest react-dom@latest"
+
+On installation, you'll see the following prompts:
+
+What is your project named? YOUR APP NAME
+Would you like to use TypeScript? No / "YES"
+Would you like to use ESLint? No / "YES"
+Would you like to use Tailwind CSS? No / "YES"
+Would you like your code inside a `src/` directory? "NO" / Yes
+Would you like to use App Router? (recommended) No / "YES"
+Would you like to use Turbopack for `next dev`?  No / "YES"
+Would you like to customize the import alias (`@/*` by default)? No / "YES"
+What import alias would you like configured? @/*
+
+
+📌 2º Create an account and connect CLERK in the file .env 📌
+https://dashboard.clerk.com/sign-up
+
+- Create a new project/application using sign in options "Email and Google"
+- Copy the API Keys for Next.JS an paste in your .env file.
+
+
+
+📌 3º Create an account and connect NEON in the project 📌
+[https://firebase.google.com/?hl=pt](https://console.neon.tech/)
+
+- Create a new simple project/application 
+- Copy the URL in "Connection string" and paste in the "DATABASE_URL"
 
 
 
 
 
-📌 2º Create an account and connece MONGODB in the project 📌
-https://www.mongodb.com/cloud/atlas/register
 
-- Create an database in MongoDB, for more access: "https://www.mongodb.com/resources/products/fundamentals/create-database"
-- in VSCode insert the command: "mongoose.connect("mongodb+srv://YOURNAMESERVER:YOURPASSWORD@cluster0.61xgusl.mongodb.net/YOURPROJECTURL")" into the file "index.js" 
-
-
-
-
-
-📌 3º Start Your Project 📌
+📌 4º Start Your Project 📌
 
 - "npm start" for the frontend
 - "node .\index.js" for the backend
